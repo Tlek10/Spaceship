@@ -1,0 +1,46 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap; // Позволяет элементам переходить на следующий ряд
+  gap: 10px;
+
+  button {
+    background-color: #f9f9f9;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.1s ease-in-out;
+    text-align: center;
+
+    &:hover {
+      background-color: darken(#f9f9f9, 2%);
+    }
+
+    &:active {
+      background-color: darken(#f9f9f9, 5%);
+    }
+
+    &.active {
+      background-color: #282828;
+      color: #fff;
+    }
+  }
+}
+
+// Медиа-запрос для адаптивности
+@media (max-width: 768px) {
+  .categories {
+    justify-content: center; // Центрируем кнопки
+  }
+
+  button {
+    flex: 1 1 calc(33.33% - 10px); // Для экранов меньше 768px, кнопки занимают 1/3 ширины
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    flex: 1 1 calc(50% - 10px); // Для экранов меньше 480px, кнопки занимают 1/2 ширины
+  }
+}

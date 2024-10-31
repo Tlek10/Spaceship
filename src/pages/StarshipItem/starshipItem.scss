@@ -1,0 +1,27 @@
+.starship-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 65px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #555;
+  }
+}

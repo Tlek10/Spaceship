@@ -1,0 +1,50 @@
+@import '../variables';
+
+.button {
+  display: inline-block;
+  background-color: $buttonColor;
+  border-radius: 20px;
+  padding: 8px 20px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+  border: 1px solid transparent;
+
+  &,
+  span {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: darken($buttonColor, 8%);
+  }
+
+  &:active {
+    background-color: darken($buttonColor, 12%);
+    transform: translateY(1px);
+  }
+
+  &--primary {
+    background-color: $buttonColor;
+    border-radius: 20px;
+    &:hover {
+      background-color: darken($buttonColor, 8%);
+    }
+  }
+
+  &--round {
+    border-radius: 20px;
+    padding: 8px 20px;
+  }
+
+  &--secondary {
+    background-color: $buttonSecondaryColor;
+    color: #fff;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: darken($buttonSecondaryColor, 8%);
+    }
+  }
+}
