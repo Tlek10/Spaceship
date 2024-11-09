@@ -4,7 +4,7 @@ export interface Starship {
     manufacturer: string;
     cost_in_credits: string;
     starship_class: string;
-    length: string | number; // Допустимы оба типа
+    length: string | number;
     max_atmosphering_speed: string | number;
     crew: string | number;
     passengers: string | number;
@@ -17,4 +17,9 @@ export interface Starship {
     created: string;
     edited: string;
     url: string;
+}
+
+export interface StarshipsState {
+    starships: Starship[];
+    status: 'idle' | 'loading' | 'succeeded' | 'failed';
 }

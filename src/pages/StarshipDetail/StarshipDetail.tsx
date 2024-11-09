@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {useLocation, useParams} from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -37,7 +37,7 @@ const StarshipDetail: React.FC = () => {
                 };
 
                 setStarship(processedStarship);
-                reset(processedStarship); // Load processed data into the form
+                reset(processedStarship);
             } catch (error) {
                 console.error('Error fetching starship:', error);
             }

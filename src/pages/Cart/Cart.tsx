@@ -8,7 +8,6 @@ import './Cart.scss';
 import {
     containerStyle,
     titleStyle,
-    emptyTextStyle,
     itemContainerStyle,
     itemNameStyle,
     itemPriceStyle,

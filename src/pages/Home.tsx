@@ -4,7 +4,7 @@ import { Pagination } from "@mui/material";
 import { useSelector } from "react-redux";
 import { fetchStarships, selectStarshipData } from "../redux/starship/asyncActions";
 import Categories from "../components/Categories/Categories";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import StarshipItem from "./StarshipItem/ StarshipItem";
 
 const Home: React.FC = () => {

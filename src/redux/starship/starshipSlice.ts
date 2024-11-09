@@ -1,11 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchStarships } from './asyncActions';
-import {Starship} from "./type";
+import {Starship, StarshipsState} from "./type";
 
-interface StarshipsState {
-    starships: Starship[];
-    status: 'idle' | 'loading' | 'succeeded' | 'failed';
-}
+
 
 const initialState: StarshipsState = {
     starships: [],
